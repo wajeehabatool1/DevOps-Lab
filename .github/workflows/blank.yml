@@ -13,6 +13,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name : user
+        run: |
+          whoami
+          id
 
       - name: Run a one-line script
         run: echo Hello, world!
