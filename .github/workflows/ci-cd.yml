@@ -65,4 +65,8 @@ jobs:
             location: ${{ env.GKE_ZONE }}
             project_id: ${{ secrets.GKE_PROJECT }}
         
+        - name: GKE Nodes
+          uses: kubectl get nodes
+          
+        
 
