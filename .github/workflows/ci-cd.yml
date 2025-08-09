@@ -71,7 +71,7 @@ jobs:
         - name: Deploy Manifest
           run: |
              kubectl apply -f deployment.yaml
-             kubectl get deployments
+             kubectl rollout status deployment/nodeapp-deployment
         
         
 
