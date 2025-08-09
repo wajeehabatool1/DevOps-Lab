@@ -67,6 +67,13 @@ jobs:
         
         - name: GKE Nodes
           run: 'kubectl get nodes'
+        
+        - name: Deploy Manifest
+          run: |
+             kubectl apply -f deployment.yaml
+             kubectl get deployments
+        
+        
 
         
 
